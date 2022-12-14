@@ -1,8 +1,6 @@
-
 #include <iostream>
 
 bool IsOdd(int num);
-
 
 int main()
 {
@@ -13,21 +11,14 @@ int main()
     for (int i = 0; i < 3;)
     {
         if (!IsOdd(number))
-        {
-            number = number / 2;
-        }
+            number = number / 2;      
         else
-        {
             number = number * 3 + 1;
-        }
-
+        
         if (number == 1)
-        {
             i++;
-        }
-
+        
         std::cout << number << "\n";
-
     }
 }
 
@@ -35,15 +26,8 @@ int main()
 bool IsOdd(int num)
 {
     if (num % 2 == 0)
-    {
         return false;
-    }
     else
-    {
         return true;
-    }
-
-
-
 }
 
